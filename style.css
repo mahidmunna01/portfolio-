@@ -1,0 +1,136 @@
+:root{
+  --color:#a55eea;
+}
+*,
+::after,::before{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+}
+body{
+   font-family: "Raleway", sans-serif;
+   color: aliceblue;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin-bottom: 25px;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 2px;
+  box-shadow: 10px 10px 05px 05px var(--color);
+  display: block;
+  cursor: pointer;
+}
+/*section{
+  padding: 10% 0;
+  background-color: black;
+}*/
+.about_page{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  gap:15px
+}
+.left_side{
+  flex-basis: 60%;
+}
+.right_side{
+  flex-basis: 40%;
+}
+.left_side h1{
+  font-size: 30px;
+  position: relative;
+  bottom: 25px;
+  color:var(--color);
+}
+.left_side ul{
+  text-align: left;
+  margin-bottom: 35px;
+}
+.left_side ul li{
+  display: inline;
+  margin-right: 15px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+.left_side ul li a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.active{
+  background-color: var(--color);
+}
+.left_side ul li:hover{
+  text-decoration: none;
+  background-color: var(--color);
+  box-shadow: 2px 2px 08px 05px var(--color);
+}
+p{
+  font-size: 20px;
+  line-height: 1.5em;
+}
+.fa-brands{
+  font-size: 30px;
+  margin-right: 20px;
+  color: aliceblue;
+  position: relative;
+  top: 10px;
+}
+.fa-facebook{
+ color: var(--color);
+ background-color: aliceblue;
+ border-radius: 100%;
+ box-shadow: 0px 0px 05px 3px var(--color);
+}
+.fa-brands:hover{
+  color: var(--color);
+}
+
+@media screen and (max-width:800px) {
+  
+  .about_page{
+    width: 90%;
+    flex-direction: column;
+  }
+  .left_side h1{
+    font-size: 23px;
+    margin-top: 35px;
+    color: aliceblue;
+  }
+.left_side ul li{
+  margin-right: 5px;
+  padding: 5px;
+} 
+.left_side ul li a{
+  font-size: 10px;
+  font-weight: bold;
+}
+p{
+  font-size: 15px;
+}
+.fa-brands{
+  font-size: 20px;
+}
+.left_side{
+  order: 2;
+}
+
+img{
+  width: 90%;
+  border: 2px solid #ddd;
+  box-shadow: 5px 05px 05px 05px var(--color);
+}
+}
